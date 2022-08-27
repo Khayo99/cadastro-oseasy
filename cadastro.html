@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <title>OS Easy</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="logo"></div>
+
+    <div class="mensagem">
+      <h1>Crie sua conta</h1>
+    </div>
+
+    <form action="/" method="get" id="cadastro">
+
+      <div class="fullName">
+        <label>Nome completo</label>
+
+        <div class="input-icon">
+          <div class="icon icon-name">
+            <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 0C11.3261 0 12.5979 0.526784 13.5355 1.46447C14.4732 2.40215 15 3.67392 15 5C15 6.32608 14.4732 7.59785 13.5355 8.53553C12.5979 9.47322 11.3261 10 10 10C8.67392 10 7.40215 9.47322 6.46447 8.53553C5.52678 7.59785 5 6.32608 5 5C5 3.67392 5.52678 2.40215 6.46447 1.46447C7.40215 0.526784 8.67392 0 10 0M10 2.5C9.33696 2.5 8.70107 2.76339 8.23223 3.23223C7.76339 3.70107 7.5 4.33696 7.5 5C7.5 5.66304 7.76339 6.29893 8.23223 6.76777C8.70107 7.23661 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.23661 11.7678 6.76777C12.2366 6.29893 12.5 5.66304 12.5 5C12.5 4.33696 12.2366 3.70107 11.7678 3.23223C11.2989 2.76339 10.663 2.5 10 2.5M10 11.25C13.3375 11.25 20 12.9125 20 16.25V20H0V16.25C0 12.9125 6.6625 11.25 10 11.25ZM10 13.625C6.2875 13.625 2.375 15.45 2.375 16.25V17.625H17.625V16.25C17.625 15.45 13.7125 13.625 10 13.625Z"
+                fill="white" />
+            </svg>
+          </div>
+
+          <input id="inputFullName" type="text" placeholder="Seu nome" required>
+        </div>
+      </div>
+
+      <div class="email">
+        <label>E-mail</label>
+
+        <div class="input-icon">
+          <div class="icon">
+            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.33329 3.33331H16.6666C17.5833 3.33331 18.3333 4.08331 18.3333 4.99998V15C18.3333 15.9166 17.5833 16.6666 16.6666 16.6666H3.33329C2.41663 16.6666 1.66663 15.9166 1.66663 15V4.99998C1.66663 4.08331 2.41663 3.33331 3.33329 3.33331Z"
+                stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M18.3333 5L9.99996 10.8333L1.66663 5" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+
+          <input id="inputEmail" type="email" placeholder="nome@exemplo.com.br" required>
+        </div>
+      </div>
+
+      <div class="cell">
+        <label>Celular</label>
+
+        <div class="input-icon">
+          <div class="icon icon-cell">
+            <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1214 7C18.9237 8.63636 18.9237 11.1818 17.1214 12.9091L18.1227 13.8182C20.6258 11.7273 20.6258 8.27273 18.1227 6.09091L17.1214 7ZM16.02 8L15.0188 8.90909C15.5194 9.54545 15.5194 10.3636 15.0188 11L16.02 11.9091C17.2215 10.8182 17.2215 9.18182 16.02 8ZM12.015 0H2.0025C1.47141 0 0.962062 0.191558 0.58652 0.532533C0.210977 0.873508 0 1.33597 0 1.81818V18.1818C0 18.664 0.210977 19.1265 0.58652 19.4675C0.962062 19.8084 1.47141 20 2.0025 20H12.015C12.5461 20 13.0555 19.8084 13.431 19.4675C13.8065 19.1265 14.0175 18.664 14.0175 18.1818V1.81818C14.0175 1.33597 13.8065 0.873508 13.431 0.532533C13.0555 0.191558 12.5461 0 12.015 0ZM12.015 17.2727H2.0025V2.72727H12.015V17.2727Z"
+                fill="white" />
+            </svg>
+          </div>
+
+          <input id="inputTel" type="tel" placeholder="DD 9 9999-9999" maxlength="14"
+            onkeypress="formatar('## # ####-####', this)" required>
+        </div>
+      </div>
+
+      <div class="password">
+        <label>Senha</label>
+
+        <div class="input-icon ">
+          <div class="icon">
+            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.8333 9.16666H4.16667C3.24619 9.16666 2.5 9.91285 2.5 10.8333V16.6667C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6667V10.8333C17.5 9.91285 16.7538 9.16666 15.8333 9.16666Z"
+                stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M5.83337 9.16666V5.83332C5.83337 4.72825 6.27236 3.66845 7.05376 2.88704C7.83516 2.10564 8.89497 1.66666 10 1.66666C11.1051 1.66666 12.1649 2.10564 12.9463 2.88704C13.7277 3.66845 14.1667 4.72825 14.1667 5.83332V9.16666"
+                stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+
+          <input type="password" id="inputPassword" placeholder="Digite sua senha" required />
+
+          <div class="icon">
+            <img src="./assets/eye.svg" id="eyeSvg" onclick="eyeClick()">
+          </div>
+        </div>
+      </div>
+
+      <div class="password">
+        <label>Confirmar senha</label>
+
+        <div class="input-icon ">
+          <div class="icon">
+            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.8333 9.16666H4.16667C3.24619 9.16666 2.5 9.91285 2.5 10.8333V16.6667C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6667V10.8333C17.5 9.91285 16.7538 9.16666 15.8333 9.16666Z"
+                stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M5.83337 9.16666V5.83332C5.83337 4.72825 6.27236 3.66845 7.05376 2.88704C7.83516 2.10564 8.89497 1.66666 10 1.66666C11.1051 1.66666 12.1649 2.10564 12.9463 2.88704C13.7277 3.66845 14.1667 4.72825 14.1667 5.83332V9.16666"
+                stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+
+          <input type="password" id="inputPassword2" placeholder="Confirme sua senha" required />
+
+          <div class="icon">
+            <img src="./assets/eye.svg" id="eyeSvg2" onclick="eyeClick2()">
+          </div>
+        </div>
+      </div>
+
+      <div class="botao">
+        <input type="submit" value="Cadastrar">
+      </div>
+
+    </form>
+
+    <div class="return-login">
+      <h1>Já tem cadastro? <a href="./index.html">Acesse sua conta</a></h1>
+    </div>
+
+  </div>
+</body>
+<script src="./scripts_js/mask.js"></script>
+<script src="./scripts_js/eyeOpen.js"></script>
+<script src="./scripts_js/eyeOpen2.js"></script>
+<script src="./scripts_js/validationsFileds.js"></script>
+
+</html>
